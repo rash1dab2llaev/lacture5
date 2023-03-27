@@ -39,12 +39,7 @@ const person = {
 В JavaScript ключевое слово this относится к объекту.
 Какой объект зависит от того, как он вызывается (используется или вызывается).
 Ключевое слово this относится к разным объектам в зависимости от того, как оно используется:
-In an object method, this refers to the object.
-Alone, this refers to the global object.
-In a function, this refers to the global object.
-In a function, in strict mode, this is undefined.
-In an event, this refers to the element that received the event.
-Methods like call(), apply(), and bind() can refer this to any object.
+В объектном методе это относится к объекту. Само по себе это относится к глобальному объекту. В функции это относится к глобальному объекту. В функции в строгом режиме это не определено. В событии это относится к элементу, который получил событие. Такие методы, как call(), apply() и bind(), могут ссылаться на любой объект.
 
 
 # Object.entries()

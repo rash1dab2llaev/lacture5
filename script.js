@@ -7,8 +7,7 @@ let timeNow = new Date()
 console.log(timeNow);//Mon Mar 27 2023 16:34:39 GMT+0500 (Tajikistan Time)
 
 let date = new Date('2001-09-08')
-console.log(date);//Sat Sep 08 2001 05:00:00 GMT+0500 (Tajikistan Time)
-
+console.log(date);//Sat Sep 08 2001 05:00:00 GMT+0500 (Tajikistan Time)1
 
 let date1 = new Date(2024, 3, 02, 15, 30, 40, 0)
 console.log(date1);//Tue Apr 02 2024 15:30:40 GMT+0500 (Tajikistan Time)
@@ -58,3 +57,16 @@ console.log(monthDate.setMonth(8));//1695816098043
 let setYear = new Date()
 let setYear2 = setYear.setFullYear(setYear.getFullYear(), setYear.getMonth() - 6)
 console.log(setYear2);
+
+
+
+
+
+//home task
+function getTimefunc(time1, time2) {
+    let getTime1 = time1.getTime()
+    let getTime2 = time2.getTime()
+    let res = getTime1-getTime2
+    return res/(24*60*60*1000)
+}
+console.log(getTimefunc(new Date('2023-03-27'), new Date('2021-03-28')));
